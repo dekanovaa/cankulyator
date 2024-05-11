@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.calculator {
+    text-align: center;
+    margin: 100px auto;
+    width: 350px;
+    height: 250px;
+    background-color:rgb(99, 99, 153);
+    border-radius: 5px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 5px solid rgb(25, 25, 87);
+   
+  }
+  
+  input[type="number"], select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    background-color: white;
+    height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 8px;
+  }
+ 

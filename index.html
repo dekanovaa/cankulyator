@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>Trig Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <div id="result"></div>
+    <input type="number" id="angleInput" placeholder="Enter angle in degrees">
+    <select id="trigFunction">
+      <option value="sin">Sin</option>
+      <option value="cos">Cos</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+  </div>
+  
+  <script>
+function calculate() {
+  var angleInput = document.getElementById("angleInput").value;
+  var angleRad = angleInput * (Math.PI / 180); // Convert degrees to radians
+  var trigFunction = document.getElementById("trigFunction").value;
+  
+  var result;
+  if (trigFunction === "sin") {
+    result = Math.sin(angleRad);
+  } else if (trigFunction === "cos") {
+    result = Math.cos(angleRad);
+  }
+  
+  document.getElementById("result").innerHTML = trigFunction.toUpperCase() + ": " + result.toFixed(2);
+}
+
+</script>
+</body>
+</html>
